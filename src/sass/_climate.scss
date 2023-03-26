@@ -1,0 +1,119 @@
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.weather_container {
+  width: 395px;
+  height: 675px;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+.weather_info {
+  display: flex;
+}
+
+.temperature_title {
+  color: #ffff;
+  padding: 45px 8px 95px 53px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.17;
+}
+
+.description_title {
+  color: var(--white-color);
+  padding: 40px 124px 0px 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.location_container {
+  display: flex;
+  width: 177px;
+
+  padding: 10px 17px 9px 11px;
+  background-color: rgba(254, 254, 255, 0.3);
+
+  border-radius: 10px;
+  margin-left: 8px;
+  gap: 12px;
+  /* margin-bottom: 91px; */
+}
+
+.vl {
+  /* border-left: 1px solid #FFFFFF;
+
+    height: 81px;
+    padding-top: 45px;
+padding-bottom: 549px; */
+  border-left: 1px solid var(--white-color);
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -327px;
+  top: 45px;
+  height: 81px;
+}
+
+.location_wrapper {
+  display: block;
+  height: 124px;
+}
+
+.location_icon {
+  stroke: var(--white-color);
+}
+
+.city_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--white-color);
+}
+
+.weather__img {
+  width: 165px;
+  height: 156px;
+  /* margin-top: 89px; */
+  margin-left: 115px;
+  margin-right: 115px;
+  margin-bottom: 90px;
+}
+
+.date_container {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.date_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.location_name {
+  color: var(--white-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+}
