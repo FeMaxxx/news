@@ -1,16 +1,106 @@
+@import "~node_modules/modern-normalize/modern-normalize.css";
+:root {
+  --accent-color: #4440f6;
+  --white-color: #ffffff;
+  --dark-text-color: #111321;
+  --light-text-color: #f4f4f4;
+  --secondary-text-color: #a8a8a8;
+  --light-bg-color: #f4f4f4;
+  --dark-bg-color: #2e2e2e;
+}
+
+body {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.38;
+  color: var(--dark-text-color);
+  background-color: var(--light-bg-color);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0px;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+  max-width: 320px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
 .weather_container {
   width: 288px;
   height: 469px;
   background-color: var(--accent-color);
   border-radius: 4px;
   padding: 40px 37px 84px 35px;
-
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .weather_container {
     width: 353px;
     height: 675px;
     padding: 40px 32px 130px 33px;
   }
-  @media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1280px) {
+  .weather_container {
     width: 395px;
     height: 675px;
     padding: 45px 53px 130px 53px;
@@ -19,24 +109,23 @@
 
 .weather_info {
   display: flex;
-  // margin-left: 35px;
-  // margin-right: 37px;
-  // padding-top: 37px;
 }
 
 .temperature_title {
   color: var(--white-color);
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 55px;
   line-height: 1.16;
-
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .temperature_title {
     margin-top: 10px;
   }
-  @media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1280px) {
+  .temperature_title {
     font-size: 64px;
     line-height: 1.17;
   }
@@ -49,14 +138,16 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-
   margin-bottom: 5px;
-
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .description_title {
     font-size: 36px;
     line-height: 1.17;
   }
-  @media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1280px) {
+  .description_title {
     font-size: 36px;
     line-height: 1.17;
     margin-left: 15px;
@@ -72,14 +163,16 @@
   gap: 7px;
   background-color: rgba(254, 254, 255, 0.3);
   border-radius: 10px;
-
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .location_container {
     width: 177px;
     height: 42px;
     margin-right: 32px;
   }
-
-  @media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1280px) {
+  .location_container {
     width: 177px;
     padding: 10px 17px 9px 11px;
     margin-left: 8px;
@@ -91,11 +184,14 @@
   border-left: 1px solid var(--white-color);
   height: 63px;
   margin-right: 11px;
-
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .vl {
     height: 81px;
   }
-  @media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1280px) {
+  .vl {
     margin-top: 8px;
   }
 }
@@ -115,11 +211,15 @@
   font-size: 14px;
   line-height: 1.14;
   color: var(--white-color);
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .location__name {
     font-size: 20px;
     line-height: 1.17;
   }
-  @media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1280px) {
+  .location__name {
     font-size: 20px;
     line-height: 1.17;
   }
@@ -127,29 +227,28 @@
 
 .weather__img {
   display: block;
-
   width: 128px;
   height: 121px;
   margin-top: 54px;
-
   margin-left: auto;
   margin-right: auto;
-
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .weather__img {
     width: 165px;
     height: 156px;
     margin-top: 91px;
     margin-bottom: 90px;
   }
-
-  @media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1280px) {
+  .weather__img {
     width: 165px;
     height: 156px;
     /* margin-top: 89px; */
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 89px;
-
     margin-top: 90px;
   }
 }
@@ -166,12 +265,16 @@
   width: 155px;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .date_container {
     margin-top: 90px;
     margin-left: auto;
     margin-right: auto;
   }
-  @media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1280px) {
+  .date_container {
     margin-right: auto;
     margin-left: auto;
   }
@@ -191,11 +294,14 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .location_name {
     font-size: 20px;
     line-height: 1.17;
   }
 }
+
 .temperature__wrapper {
   margin-right: 1px;
 }
@@ -207,13 +313,15 @@
   font-weight: 400;
   font-size: 28px;
   line-height: 1.17;
-
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .weather__date {
     font-size: 36px;
     line-height: 1.17;
-    // margin: 90px 77px 130px 77px;
   }
-  @media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1280px) {
+  .weather__date {
     font-size: 36px;
     line-height: 1.17;
   }
@@ -225,45 +333,62 @@
   font-weight: 400;
   font-size: 28px;
   line-height: 1.18;
-  @media screen and (min-width: 768px) {
-    font-size: 36px;
-    line-height: 1.17;
-    // margin: 90px 77px 130px 77px;
-  }
-  @media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 768px) {
+  .weather__day {
     font-size: 36px;
     line-height: 1.17;
   }
 }
+@media screen and (min-width: 1280px) {
+  .weather__day {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
 .weather__month {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 1.18;
-  @media screen and (min-width: 768px) {
-    font-size: 36px;
-    line-height: 1.17;
-    // margin: 90px 77px 130px 77px;
-  }
-  @media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 768px) {
+  .weather__month {
     font-size: 36px;
     line-height: 1.17;
   }
 }
+@media screen and (min-width: 1280px) {
+  .weather__month {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
 .weather__year {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 1.18;
-  @media screen and (min-width: 768px) {
-    font-size: 36px;
-    line-height: 1.17;
-    // margin: 90px 77px 130px 77px;
-  }
-  @media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 768px) {
+  .weather__year {
     font-size: 36px;
     line-height: 1.17;
   }
 }
+@media screen and (min-width: 1280px) {
+  .weather__year {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+.filters-date .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+}/*# sourceMappingURL=index.css.map */
